@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19344805db578464c92fd6502a5eb4b9, type: 3}
+  m_Name: Eclipse Sigil
+  m_EditorClassIdentifier: 
+  runewordId: runeword_eclipse
+  targetSlot: 0
+  sequence:
+  - {fileID: 11400000, guid: 01ca839065a03b04c996403209158ec0, type: 2}
+  - {fileID: 11400000, guid: ad84bf02d760d40488131a4eee7640c5, type: 2}
+  effectDescription: Combines Sol + Noct for dual-state damage buff.
