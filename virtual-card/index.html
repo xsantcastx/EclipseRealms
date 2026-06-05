@@ -25,13 +25,14 @@
     --bg:#f3eef1;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     background:var(--bg);
     color:var(--ink);
     display:flex;
     justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
     padding:24px 14px 48px;
     -webkit-font-smoothing:antialiased;
   }
@@ -146,8 +147,8 @@
     <!-- HERO -->
     <section class="hero">
       <div class="brand">
-        <img class="logo" id="logo" src="logo.jpg" alt="Creation Design & Events" onerror="this.remove()" onload="this.classList.add('show')" />
-        <div class="mark" aria-hidden="true">✿</div>
+        <img class="logo" id="logo" src="logo.jpg" alt="Creation Design & Events" onerror="this.remove()" onload="this.classList.add('show');var m=document.getElementById('brandMark');if(m)m.remove();" />
+        <div class="mark" id="brandMark" aria-hidden="true">✿</div>
         <div>
           <div class="bname">Creation Design &amp; Events</div>
           <div class="btag">Creative Studio</div>
