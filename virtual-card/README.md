@@ -7,14 +7,20 @@ pass the card along.
 
 ## What's in this folder
 
-| File | Purpose |
-|------|---------|
-| `index.html` | The card itself (open this in any browser). |
-| `angela-triana.vcf` | The contact file (vCard) the "Add to Contacts" button downloads. |
-| `logo.jpg` | Creation Design & Events logo shown on the card. |
-| `photo.jpg` | *(optional)* A photo of Angela. Drop a square JPG here and it appears automatically. |
+There is one card per team member. The logo is shared at the top level.
 
-> If `photo.jpg` is missing, the card gracefully shows an "AT" monogram instead — nothing breaks.
+| Path | Purpose |
+|------|---------|
+| `index.html` | **Angela Triana** — Creative Director (her card). |
+| `angela-triana.vcf` | Angela's contact file (vCard) the "Add to Contacts" button downloads. |
+| `carlos/index.html` | **Carlos Triana** — President (his card). |
+| `carlos/carlos-triana.vcf` | Carlos's contact file. |
+| `logo.jpg` | Creation Design & Events logo (shared by both cards). |
+| `photo.jpg` | *(optional)* A square photo of Angela — drop it here and it appears automatically. |
+| `carlos/photo.jpg` | *(optional)* A square photo of Carlos. |
+
+> If a `photo.jpg` is missing, that card gracefully shows the person's initials
+> ("AT" / "CT") as a monogram instead — nothing breaks.
 
 ## How to see it right now
 
