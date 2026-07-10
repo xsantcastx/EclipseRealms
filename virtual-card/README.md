@@ -15,6 +15,9 @@ There is one card per team member. The logo is shared at the top level.
 | `angela-triana.vcf` | Angela's contact file (vCard) the "Add to Contacts" button downloads. |
 | `carlos/index.html` | **Carlos Triana** — President (his card). |
 | `carlos/carlos-triana.vcf` | Carlos's contact file. |
+| `team.html` | "Our team" landing page linking to both cards. |
+| `wallet/` | Tooling to build **self-owned Google Wallet passes** (free) — see `wallet/README.md`. |
+| `google-links.js` | Holds the generated "Add to Google Wallet" links (buttons stay hidden until filled). |
 | `logo.jpg` | Creation Design & Events logo (shared by both cards). |
 | `photo.jpg` | *(optional)* A square photo of Angela — drop it here and it appears automatically. |
 | `carlos/photo.jpg` | *(optional)* A square photo of Carlos. |
