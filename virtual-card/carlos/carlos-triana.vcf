@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Triana;Carlos;;;
+FN:Carlos Triana
+ORG:Creation Design & Events
+TITLE:President
+TEL;TYPE=CELL,VOICE:+17863562958
+EMAIL;TYPE=WORK:carlos@creadevents.com
+EMAIL;TYPE=HOME:creationdesign.events@yahoo.com
+URL:https://www.creadevents.com
+X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/creadevents
+X-SOCIALPROFILE;TYPE=twitter:https://twitter.com/creadevents
+X-SOCIALPROFILE;TYPE=facebook:https://facebook.com/creadevents
+ADR;TYPE=WORK:;;;Miami;Florida;;U.S.A.
+NOTE:Creation Design & Events — Luxury Floral Company. President, Miami, Florida.
+END:VCARD

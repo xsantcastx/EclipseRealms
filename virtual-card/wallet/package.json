@@ -1,0 +1,13 @@
+{
+  "name": "creadevents-google-wallet",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Generate 'Add to Google Wallet' passes for Creation Design & Events cards",
+  "scripts": {
+    "generate": "node generate-google-wallet.js"
+  },
+  "dependencies": {
+    "google-auth-library": "^9.14.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

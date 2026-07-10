@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Creation Design &amp; Events · Digital Cards</title>
+<meta name="description" content="Creation Design & Events — Luxury Floral Company. Meet the team: tap a card to save a contact." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Creation Design & Events · Luxury Floral Company" />
+<meta property="og:description" content="Tap a card to save our contact." />
+<meta property="og:image" content="logo.jpg" />
+<style>
+  :root{
+    --plum-1:#3d0a26;--plum-2:#7a154c;--magenta:#c2185b;--magenta-2:#d81b8c;
+    --pink-soft:#f7d6e6;--ink:#241019;--muted:#8a7a82;--line:#f1e7ec;--bg:#f3eef1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);
+    display:flex;justify-content:center;align-items:flex-start;
+    min-height:100vh;padding:24px 14px 48px;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:100%;max-width:420px}
+
+  .head{
+    position:relative;overflow:hidden;
+    background:radial-gradient(150% 120% at 85% 0%,var(--plum-2) 0%,var(--plum-1) 62%);
+    color:#fff;border-radius:26px;padding:30px 26px 34px;text-align:center;
+    box-shadow:0 18px 50px rgba(61,10,38,.20);
+  }
+  .head::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;
+    background:radial-gradient(circle,rgba(216,27,140,.45),transparent 70%);}
+  .head .logo{
+    width:84px;height:84px;border-radius:20px;object-fit:cover;background:#fff;padding:5px;
+    box-shadow:0 8px 20px rgba(0,0,0,.28);position:relative;z-index:1;display:none;margin:0 auto;
+  }
+  .head .logo.show{display:block}
+  .head .mark{width:84px;height:84px;border-radius:20px;display:grid;place-items:center;margin:0 auto;
+    background:rgba(255,255,255,.12);color:#fff;font-size:38px;position:relative;z-index:1}
+  .head h1{margin-top:16px;font-size:22px;font-weight:700;position:relative;z-index:1}
+  .head .tag{margin-top:6px;font-size:10px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--pink-soft);position:relative;z-index:1}
+
+  .lead{text-align:center;color:#5a4a52;font-size:14px;padding:22px 8px 10px}
+
+  .people{display:flex;flex-direction:column;gap:14px}
+  .person{
+    display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit;
+    background:#fff;border-radius:20px;padding:16px 18px;
+    box-shadow:0 10px 28px rgba(61,10,38,.10);
+    transition:transform .08s ease;
+  }
+  .person:active{transform:scale(.98)}
+  .person .ava{
+    flex:0 0 auto;width:60px;height:60px;border-radius:50%;
+    background:linear-gradient(135deg,var(--magenta),var(--magenta-2));color:#fff;
+    display:grid;place-items:center;font-size:22px;font-weight:600;letter-spacing:1px;
+    overflow:hidden;
+  }
+  .person .ava img{width:100%;height:100%;object-fit:cover;display:none}
+  .person .ava img.show{display:block}
+  .person .who{flex:1}
+  .person .who .n{font-size:17px;font-weight:700}
+  .person .who .r{font-size:13px;color:var(--muted)}
+  .person .go{color:var(--magenta);font-size:22px}
+
+  .foot{text-align:center;font-size:11px;color:#b39aa6;padding:24px 8px 0}
+  .foot a{color:var(--magenta);text-decoration:none}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <img class="logo" id="logo" src="logo.jpg" alt="Creation Design & Events"
+           onerror="this.remove()"
+           onload="this.classList.add('show');var m=document.getElementById('brandMark');if(m)m.remove();" />
+      <div class="mark" id="brandMark" aria-hidden="true">✿</div>
+      <h1>Creation Design &amp; Events</h1>
+      <div class="tag">Luxury Floral Company · Miami, FL</div>
+    </header>
+
+    <p class="lead">Tap a name to open their card and save the contact.</p>
+
+    <nav class="people">
+      <a class="person" href="index.html">
+        <span class="ava"><img src="photo.jpg" alt="" onerror="this.remove()" onload="this.classList.add('show')" />AT</span>
+        <span class="who"><div class="n">Angela Triana</div><div class="r">Creative Director</div></span>
+        <span class="go">›</span>
+      </a>
+      <a class="person" href="carlos/index.html">
+        <span class="ava"><img src="carlos/photo.jpg" alt="" onerror="this.remove()" onload="this.classList.add('show')" />CT</span>
+        <span class="who"><div class="n">Carlos Triana</div><div class="r">President</div></span>
+        <span class="go">›</span>
+      </a>
+    </nav>
+
+    <div class="foot">
+      <a href="https://www.creadevents.com" target="_blank" rel="noopener">www.creadevents.com</a>
+    </div>
+  </div>
+</body>
+</html>
